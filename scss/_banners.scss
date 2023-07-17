@@ -1,0 +1,78 @@
+/* Prueba banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh; /* El 60% del alto total de la pantalla */
+    background-image: url("../img/banner-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.4); /* Opacidad del 40% */
+        padding: 20px;
+        img {
+            display: block;
+            margin: 0 auto; /* Centra horizontalmente */
+            width: 100%;
+        }
+    }
+}
+
+/*Banner modulo naranja*/
+.bannerNaranja{
+    background-color: $color-acentos;
+    width: auto;  
+    h3{
+        color: white;
+        padding: 2%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        margin-bottom:0;
+    }
+}
+
+/*banner Azul*/
+.bannerazul{
+    background-color: #06B7A7;
+    width: auto;
+    h3{
+        color: white;
+        padding: 2%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        margin-bottom:0;
+    }
+}
+
+/*Titulo de todas las páginas*/
+.bannerTitulo{
+    background-color: #012D36;
+    padding-left: 3%;
+    h1{
+        color:white;
+        font-weight: 900;
+        font-size: 50;
+        text-align: left;    
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+        margin-bottom:0;
+    }
+}
+
+/*banner nosotros*/
+#bannerNosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #012D36;
+    padding: 10%;
+}

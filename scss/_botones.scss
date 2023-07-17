@@ -1,0 +1,28 @@
+/*Botones*/
+button{
+    background-color:$color-acentos;
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+    border-color:$color-acentos;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+    &:hover{
+        background-color: #FFC215;
+        color: white;
+        font-weight: 400;
+        font-size: medium;
+        border-color: #FFC215;
+        border-radius: 40px;
+        padding: 5px 20px 5px 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.74);
+    }
+    .carousel-control-next:hover{
+        background-color: #ffffff00;
+        box-shadow: none;
+    }
+    .carousel-control-prev:hover{
+        background-color: #ffffff00;
+        box-shadow: none;
+    }
+}

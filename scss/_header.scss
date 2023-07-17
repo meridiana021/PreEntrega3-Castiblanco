@@ -1,0 +1,26 @@
+header{
+    background-color: #012D36;
+    nav {
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin-left: 10px;
+            }
+            .nav-link{
+                font-size: 18px;
+                color: white;
+            }
+        }
+        .navbar{
+            text-align: right;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+        }
+    }
+}

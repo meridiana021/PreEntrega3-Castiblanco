@@ -1,0 +1,125 @@
+/*Cards con fotos inicio*/
+#contCards{
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .card{
+        border-radius: 0;
+        box-shadow: 0;
+        border-color: rgba(255, 255, 255, 0);
+        width: 447px;
+        margin: 10px;
+        text-align: center;
+        display: inline-block;
+        h3{
+            color: $fondo-oscuro;
+            font-size: 35px;
+            text-align: left;
+            font-weight: 400;
+        }
+        img{
+            border-radius: 0;
+            
+        }
+        img:hover{
+            box-shadow: 0 0 15px rgb(97, 97, 97);
+        }
+        .card-body{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            .card-titulo{
+                width: 50%;
+            }
+            .arrow{
+                background-image: url(../img/atipicaRecurso\ 39arrow.svg);
+                height: 25px;
+                width: 50%;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: 100% auto;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/*Perfiles nosotros*/
+.contcards-nos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
+    .card-nos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .contenidoCard {
+            h3{
+                padding: 15px 0 0 15px;
+            }
+            p{
+                text-align: center;
+                color: $fondo-oscuro;
+            }
+        }
+    }
+}
+
+/*Página de lugares*/
+
+.cont-artic{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .cardArtic{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 15px black;  
+        padding: 0 0 20px 0; 
+        margin: 10px; 
+        text-align: center;
+        .contenidoArtic{
+            padding: 25px;
+            p{
+                text-align: left;
+                font-weight: 100;
+            }
+            .titulo-categoria{
+                color: $color-acentos;
+                text-align: left;
+                font-weight: 500;
+                font-size: 10;
+                padding: 0 0 5px 0;
+            }
+            .titulo-articulo{
+                color: $fondo-oscuro;
+                text-align: left;
+                font-weight: 100;
+                padding: 0 0 5px 0;
+            }
+        }
+    }
+}
+
+/*Seccion de galeria de artículos*/
+.secTituloArt{
+    padding: 2%;
+    h2{
+        font-family: 'Roboto', sans-serif;
+        color: $fondo-oscuro; 
+        text-align: right;
+        font-size: 40;
+        font-weight: 900;
+    }
+    .cont-artic p{
+        color: black;
+    }
+}

@@ -1,0 +1,78 @@
+/*queries*/
+
+@media screen and (max-width:768px) {
+
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+        .caja-img{
+            &:nth-child(1){
+                grid-column-start: span 1;
+            }
+        }
+    }
+    
+    /*Tablet galeria*/
+    #ctaInicio{
+        min-width: 10px;
+        .ctaContenido{
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    
+    /*Tablet footer*/
+    .col-md-4{
+        cont-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    #busqueda-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .contIconos{
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .iconos{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contContenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Resp Videos*/
+    .video{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /*Resp Formulario*/
+    .formulario{
+        width: 70%;
+    }
+}
+/*Teléfono galeria*/
+@media screen and (max-width:480px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .caja-img img{
+        height: 200px;
+    }
+}
