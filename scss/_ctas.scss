@@ -14,7 +14,7 @@
     width: 50%;
     height: 60vh;
     display: flex;
-    background-color: $fondo-oscuro;
+    background-color: map-get($fondos , oscuro );
     align-items: center;
     justify-content: center;
     h3{
@@ -48,7 +48,7 @@
 
 
 .descNosotros2{
-    background-color: $fondo-oscuro;
+    background-color: map-get($fondos , oscuro );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@
 
 /*Contenedor iconos instrucciones*/
 .indicaciones{
-    background-color: $fondo-oscuro;
+    background-color: map-get($fondos , oscuro );
     padding: 3%;
     display: flex;
     justify-content: center;
@@ -93,6 +93,7 @@
             justify-content: space-evenly;
             p{
                 color: white;
+                padding: 15px 0 0 15px;
             }
             .iconos{
                 width: 19%;

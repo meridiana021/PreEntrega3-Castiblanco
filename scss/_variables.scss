@@ -1,3 +1,11 @@
 /*Variables*/
 $color-acentos:#F28322;
 $fondo-oscuro: #012D36;
+
+/*Fondos bloques*/
+
+$fondos:(
+    acento: $color-acentos,
+    oscuro: $fondo-oscuro,
+    claro: #06B7A7,
+);

@@ -1,10 +1,10 @@
 /*Botones*/
 button{
-    background-color:$color-acentos;
+    background-color:map-get($fondos , acento );
     color: white;
     font-weight: 400;
     font-size: medium;
-    border-color:$color-acentos;
+    border-color:map-get($fondos , acento );
     border-radius: 40px;
     padding: 5px 20px 5px 20px;
     &:hover{
