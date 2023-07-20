@@ -1,5 +1,5 @@
 header{
-    background-color: #012D36;
+    background-color: map-get($fondos , oscuro );
     nav {
         ul{
             display: flex;

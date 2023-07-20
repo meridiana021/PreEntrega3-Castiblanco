@@ -26,10 +26,13 @@ header nav .navbar-collapse {
 }
 
 /* Prueba banner */
-.banner {
+.centrado-banner, #bannerNosotros, .bannerazul, .bannerNaranja, .banner {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.banner {
   width: 100%;
   height: 60vh; /* El 60% del alto total de la pantalla */
   background-image: url("../img/banner-inicio.jpg");
@@ -47,16 +50,17 @@ header nav .navbar-collapse {
 }
 
 /*Banner modulo naranja*/
-.bannerNaranja {
-  background-color: #F28322;
-  width: auto;
-}
-.bannerNaranja h3 {
+.textobanner, .bannerazul h3, .bannerNaranja h3 {
   color: white;
   padding: 2%;
   text-align: center;
   font-weight: 100;
   font-size: 30;
+}
+
+.bannerNaranja {
+  background-color: #F28322;
+  width: auto;
 }
 .bannerNaranja .h1, .bannerNaranja .h2, .bannerNaranja .h3, .bannerNaranja .h4, .bannerNaranja .h5, .bannerNaranja .h6, .bannerNaranja h1, .bannerNaranja h2, .bannerNaranja h3, .bannerNaranja h4, .bannerNaranja h5, .bannerNaranja h6 {
   margin-bottom: 0;
@@ -66,13 +70,6 @@ header nav .navbar-collapse {
 .bannerazul {
   background-color: #06B7A7;
   width: auto;
-}
-.bannerazul h3 {
-  color: white;
-  padding: 2%;
-  text-align: center;
-  font-weight: 100;
-  font-size: 30;
 }
 .bannerazul .h1, .bannerazul .h2, .bannerazul .h3, .bannerazul .h4, .bannerazul .h5, .bannerazul .h6, .bannerazul h1, .bannerazul h2, .bannerazul h3, .bannerazul h4, .bannerazul h5, .bannerazul h6 {
   margin-bottom: 0;
@@ -95,9 +92,6 @@ header nav .navbar-collapse {
 
 /*banner nosotros*/
 #bannerNosotros {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 30vh;
   background-color: #012D36;
@@ -206,6 +200,103 @@ header nav .navbar-collapse {
   flex-direction: column;
 }
 
+/*Página de contacto*/
+#contForm {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contForm .contContenido {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  background-color: #012D36;
+  padding: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contForm .contContenido h3 {
+  color: white;
+  text-align: right;
+  font-size: 40;
+}
+#contForm .contContenido p {
+  color: white;
+  text-align: right;
+  font-size: 20;
+}
+#contForm .contContenido .continfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contForm .contContenido .continfo button {
+  margin: 3% 0 0 0;
+}
+#contForm .contContenido .alineacion-redes, #contForm .contContenido .iconos-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px 0 20px 0;
+}
+#contForm .contContenido .iconos-redes .cont-iconos {
+  width: 20%;
+  padding: 0 2px;
+}
+#contForm .contContenido .iconos-redes .cont-iconos img {
+  height: auto;
+  width: 50%;
+}
+#contForm .izq {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contForm .izq h2 {
+  color: #F28322;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  font-size: 40;
+}
+#contForm .izq form {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#contForm .izq .formulario {
+  width: 50%;
+}
+#contForm .izq .formulario .cont-formulario .labels label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #012D36;
+}
+#contForm .izq .formulario .cont-formulario .areas-form input, #contForm .izq .formulario .cont-formulario .areas-form textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #012D36;
+}
+#contForm .izq .formulario .cont-formulario .areas-form textarea {
+  background-color: rgb(245, 245, 245);
+  height: 50px;
+}
+#contForm .izq .formulario .cont-formulario button {
+  margin: 5% 0 0 0;
+}
+
+.form-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*footer*/
 footer {
   background-color: #012D36;
@@ -276,103 +367,6 @@ footer .container .row .form-control {
   border-color: none;
   background-color: #F2E8D5;
   margin: 5px 0 20px 0;
-}
-
-/*Página de contacto*/
-#contForm {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-#contForm .contContenido {
-  width: 50%;
-  height: 60vh;
-  display: flex;
-  background-color: #012D36;
-  padding: 3%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#contForm .contContenido h3 {
-  color: white;
-  text-align: right;
-  font-size: 40;
-}
-#contForm .contContenido p {
-  color: white;
-  text-align: right;
-  font-size: 20;
-}
-#contForm .contContenido .continfo {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#contForm .contContenido .continfo button {
-  margin: 3% 0 0 0;
-}
-#contForm .contContenido .iconos-redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  padding: 20px 0 20px 0;
-}
-#contForm .contContenido .iconos-redes .cont-iconos {
-  width: 20%;
-  padding: 0 2px;
-}
-#contForm .contContenido .iconos-redes .cont-iconos img {
-  height: auto;
-  width: 50%;
-}
-#contForm .izq {
-  background-color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#contForm .izq h2 {
-  color: #F28322;
-  padding: 15px 0 15px 0;
-  text-align: center;
-  font-size: 40;
-}
-#contForm .izq form {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-#contForm .izq .formulario {
-  width: 50%;
-}
-#contForm .izq .formulario .cont-formulario .labels label {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  color: #012D36;
-}
-#contForm .izq .formulario .cont-formulario .areas-form input, #contForm .izq .formulario .cont-formulario .areas-form textarea {
-  width: 100%;
-  background: none;
-  border: none;
-  border-bottom: solid 2px #012D36;
-}
-#contForm .izq .formulario .cont-formulario .areas-form textarea {
-  background-color: rgb(245, 245, 245);
-  height: 50px;
-}
-#contForm .izq .formulario .cont-formulario button {
-  margin: 5% 0 0 0;
-}
-
-.form-contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*Galeria de fotos*/
@@ -466,7 +460,7 @@ button .carousel-control-prev:hover {
   border-radius: 0;
   box-shadow: 0;
   border-color: rgba(255, 255, 255, 0);
-  width: 447px;
+  width: 100%;
   margin: 10px;
   text-align: center;
   display: inline-block;
@@ -648,6 +642,11 @@ button .carousel-control-prev:hover {
   }
   .container-img .caja-img img {
     height: 200px;
+  }
+  #contCards .card .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 /*estilos generales*/
