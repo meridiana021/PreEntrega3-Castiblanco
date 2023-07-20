@@ -61,6 +61,10 @@ footer{
                         height: auto;
                         width: 50%;
                     }
+                    img:hover{
+                        transform: scale(1.2);
+                        transition: 600ms;
+                    }
                 }
             }
             .form-label{

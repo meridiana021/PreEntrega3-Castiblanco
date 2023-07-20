@@ -20,7 +20,10 @@
             }
         }
         &:hover{
-            box-shadow: 0 0 15px rgb(97, 97, 97);
+            box-shadow: map-get($hoversCards, sombraCards );
+            transform: map-get($hoversCards, transformCards );
+            transition: map-get($hoversCards, tiempoCards );
+            cursor: pointer;
         }
         &:nth-child(1){
             grid-column-start: span 2;

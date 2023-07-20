@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /*Variables*/
 /*Fondos bloques*/
+/*extends  de los banners*/
+.centrado-banner, #bannerNosotros, .bannerazul, .bannerNaranja, .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textobanner, .bannerazul h3, .bannerNaranja h3 {
+  color: white;
+  padding: 2%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30;
+}
+
+/*intercciones hovers cards*/
 header {
   background-color: #012D36;
 }
@@ -26,12 +42,6 @@ header nav .navbar-collapse {
 }
 
 /* Prueba banner */
-.centrado-banner, #bannerNosotros, .bannerazul, .bannerNaranja, .banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .banner {
   width: 100%;
   height: 60vh; /* El 60% del alto total de la pantalla */
@@ -50,14 +60,6 @@ header nav .navbar-collapse {
 }
 
 /*Banner modulo naranja*/
-.textobanner, .bannerazul h3, .bannerNaranja h3 {
-  color: white;
-  padding: 2%;
-  text-align: center;
-  font-weight: 100;
-  font-size: 30;
-}
-
 .bannerNaranja {
   background-color: #F28322;
   width: auto;
@@ -253,6 +255,10 @@ header nav .navbar-collapse {
   height: auto;
   width: 50%;
 }
+#contForm .contContenido .iconos-redes .cont-iconos img:hover {
+  transform: scale(1.2);
+  transition: 600ms;
+}
 #contForm .izq {
   background-color: white;
   flex-direction: column;
@@ -359,6 +365,10 @@ footer .container .row .iconos-redes .cont-iconos img {
   height: auto;
   width: 50%;
 }
+footer .container .row .iconos-redes .cont-iconos img:hover {
+  transform: scale(1.2);
+  transition: 600ms;
+}
 footer .container .row .form-label {
   color: white;
 }
@@ -392,6 +402,9 @@ footer .container .row .form-control {
 }
 .container-img .caja-img:hover {
   box-shadow: 0 0 15px rgb(97, 97, 97);
+  transform: scale(1.01);
+  transition: 600ms;
+  cursor: pointer;
 }
 .container-img .caja-img:nth-child(1) {
   grid-column-start: span 2;
@@ -420,32 +433,43 @@ footer .container .row .form-control {
 }
 
 /*Botones*/
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.carousel-control-prev:hover {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: none;
+  box-shadow: none;
+  transform: none;
+}
+
 button {
   background-color: #F28322;
+  border-radius: 40px;
+  box-shadow: 0;
+  border-color: #F28322;
   color: white;
   font-weight: 400;
   font-size: medium;
-  border-color: #F28322;
-  border-radius: 40px;
   padding: 5px 20px 5px 20px;
+  transition: 600ms;
 }
 button:hover {
-  background-color: #FFC215;
+  /*background-color: #FFC215;*/
+  background-color: 0;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(85, 85, 85, 0.226);
+  border-color: 0;
+  background-image: linear-gradient(to bottom, #F28322, #FFC215);
   color: white;
   font-weight: 400;
   font-size: medium;
-  border-color: #FFC215;
-  border-radius: 40px;
   padding: 5px 20px 5px 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.74);
-}
-button .carousel-control-next:hover {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
-}
-button .carousel-control-prev:hover {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none;
+  transform: scale(1.15);
 }
 
 /*Cards con fotos inicio*/
@@ -476,6 +500,8 @@ button .carousel-control-prev:hover {
 }
 #contCards .card img:hover {
   box-shadow: 0 0 15px rgb(97, 97, 97);
+  transform: scale(1.01);
+  transition: 600ms;
 }
 #contCards .card .card-body {
   display: flex;
@@ -554,6 +580,13 @@ button .carousel-control-prev:hover {
   font-weight: 100;
   padding: 0 0 5px 0;
 }
+.cont-artic .cardArtic:hover {
+  box-shadow: 0 0 15px rgb(97, 97, 97);
+  transform: scale(1.01);
+  transition: 600ms;
+  cursor: pointer;
+  background-color: rgb(250, 239, 231);
+}
 
 /*Seccion de galeria de artículos*/
 .secTituloArt {
@@ -618,7 +651,7 @@ button .carousel-control-prev:hover {
     display: flex;
     flex-direction: column;
   }
-  .contContenido {
+  #contForm .contContenido {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -643,10 +676,14 @@ button .carousel-control-prev:hover {
   .container-img .caja-img img {
     height: 200px;
   }
+  #contCards {
+    width: 90%;
+  }
   #contCards .card .card-body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 90%;
   }
 }
 /*estilos generales*/

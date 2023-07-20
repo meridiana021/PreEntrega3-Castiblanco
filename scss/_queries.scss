@@ -56,13 +56,15 @@
             }
         }    
     }
-    
-    .contContenido{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #contForm{
+        .contContenido{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
+    
     /*Resp Videos*/
     .video{
         width: 100%;
@@ -79,18 +81,20 @@
     .container-img{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .container-img .caja-img img{
-        height: 200px;
+        .caja-img img{
+            height: 200px;
+        }
     }
 
     #contCards {
+        width: 90%;
         .card{
             .card-body{
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                width: 90%;
             }
         } 
-    }
+    }    
 }

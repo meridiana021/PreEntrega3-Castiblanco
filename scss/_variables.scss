@@ -9,3 +9,33 @@ $fondos:(
     oscuro: $fondo-oscuro,
     claro: #06B7A7,
 );
+
+@mixin botones ($fondoB, $radio, $sombra, $colorBorde){
+    background-color: $fondoB;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    border-color: $colorBorde;
+}
+
+/*extends  de los banners*/
+.centrado-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textobanner{
+    color: white;
+    padding: 2%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30;
+}
+
+/*intercciones hovers cards*/
+$hoversCards:(
+    sombraCards: 0 0 15px rgb(97, 97, 97),
+    transformCards: scale(1.01),
+    tiempoCards: 600ms,
+)
+    

@@ -24,7 +24,9 @@
             
         }
         img:hover{
-            box-shadow: 0 0 15px rgb(97, 97, 97);
+            box-shadow: map-get($hoversCards, sombraCards );
+            transform: map-get($hoversCards, transformCards );
+            transition: map-get($hoversCards, tiempoCards );
         }
         .card-body{
             display: flex;
@@ -107,6 +109,14 @@
             }
         }
     }
+    .cardArtic:hover{
+        box-shadow: map-get($hoversCards, sombraCards );
+        transform: map-get($hoversCards, transformCards );
+        transition: map-get($hoversCards, tiempoCards );
+        cursor: pointer;
+        background-color: rgb(250, 239, 231);
+    }
+    
 }
 
 /*Seccion de galeria de artículos*/

@@ -1,28 +1,36 @@
 /*Botones*/
+
+.carousel-control-next:hover{
+    background-color: #ffffff00;
+    background-image: none;
+    box-shadow: none;
+    transform:none;
+}
+.carousel-control-prev:hover{
+    background-color: #ffffff00;
+    background-image: none;
+    box-shadow: none;
+    transform:none;
+}
+
 button{
-    background-color:map-get($fondos , acento );
+    @include botones (map-get($fondos , acento ), 40px, 0, map-get($fondos , acento ));
     color: white;
     font-weight: 400;
     font-size: medium;
-    border-color:map-get($fondos , acento );
-    border-radius: 40px;
     padding: 5px 20px 5px 20px;
+    transition: 600ms;
     &:hover{
-        background-color: #FFC215;
+        /*background-color: #FFC215;*/
+        @include botones (0, 40px, 0 0 15px rgba(85, 85, 85, 0.226), 0);
+        background-image: linear-gradient(to bottom, #F28322,#FFC215,);
         color: white;
         font-weight: 400;
         font-size: medium;
-        border-color: #FFC215;
-        border-radius: 40px;
-        padding: 5px 20px 5px 20px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.74);
+        padding: 5px 20px 5px 20px; 
+        transform:scale(1.15)       
     }
-    .carousel-control-next:hover{
-        background-color: #ffffff00;
-        box-shadow: none;
-    }
-    .carousel-control-prev:hover{
-        background-color: #ffffff00;
-        box-shadow: none;
-    }
+
+
+    
 }
